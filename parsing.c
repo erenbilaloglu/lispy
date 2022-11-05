@@ -4,6 +4,8 @@
 #include <editline/readline.h>
 #include <editline/history.h>
 
+#include "mpc.h"
+
 int main(int argc, char **argv)
 {
     /* Print Version and Exit Information */
@@ -20,7 +22,7 @@ int main(int argc, char **argv)
         add_history(input);
 
         /* Echo input back to user */
-        printf("No you're a %s", input);
+        printf("No you're a %s\n", input);
 
         /* Free retrieved input */
         free(input);
